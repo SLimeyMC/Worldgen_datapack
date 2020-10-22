@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:decorated",
+  "config": {
+    "decorator": {
+      "type": "minecraft:count_noise",
+      "config": {
+        "noise_level": 2,
+        "below_noise": 1,
+        "above_noise": 3
+      }
+    },
+    "feature": {
+      "type": "minecraft:tree",
+      "config": {
+        "max_water_depth": 12,
+        "ignore_vines": false,
+        "heightmap": "OCEAN_FLOOR",
+        "minimum_size": {
+          "type": "minecraft:two_layers_feature_size",
+          "min_clipped_height": 8,
+          "limit": 12,
+          "lower_size": 6,
+          "upper_size": 8
+        },
+        "trunk_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:acacia_log"
+          }
+        },
+        "leaves_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:oak_leaves"
+          }
+        },
+        "trunk_placer": {
+          "type": "minecraft:dark_oak_trunk_placer",
+          "base_height": 3,
+          "height_rand_a": 2,
+          "height_rand_b": 1
+        },
+        "foliage_placer": {
+          "type": "minecraft:fancy_foliage_placer",
+          "radius": {
+            "base": 3,
+            "spread": 6
+          },
+          "offset": 3,
+          "height": 4
+        },
+        "decorators": [
+		{
+            "type": "minecraft:leave_vine"
+          }
+		]
+      }
+    }
+  }
+}

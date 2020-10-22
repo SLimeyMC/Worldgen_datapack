@@ -1,0 +1,49 @@
+{
+  "config": {
+    "feature": 
+    {
+      "config": {
+        "feature": {
+          "config": {
+            "features": [
+              {
+                "feature": "minecraft:mangrove/water_blob/blob",
+                "chance": 0.5
+              },
+              {
+                "feature": "minecraft:mangrove/fancy/fancy",
+                "chance": 0.3
+              }
+            ],
+            "default": "minecraft:mangrove/default"
+          },
+          "type": "minecraft:random_selector"
+        },
+        "decorator": {
+          "config": {
+            "outer": {
+              "config": {},
+              "type": "minecraft:square"
+            },
+            "inner": {
+              "config": {},
+              "type": "minecraft:heightmap"
+            }
+          },
+          "type": "minecraft:decorated"
+        }
+      },
+      "type": "minecraft:decorated"
+    }
+    ,
+    "decorator": {
+      "config": {
+        "count": 4,
+        "extra_chance": 0.3,
+        "extra_count": 0
+      },
+      "type": "minecraft:count_extra"
+    }
+  },
+  "type": "minecraft:decorated"
+}
