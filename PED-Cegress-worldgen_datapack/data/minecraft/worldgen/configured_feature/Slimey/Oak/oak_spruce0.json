@@ -1,0 +1,84 @@
+{
+  "type": "minecraft:decorated",
+  "config": {
+    "decorator": {
+      "type": "minecraft:count",
+      "config": {
+        "count": 4
+      }
+    },
+    "feature": {
+      "type": "minecraft:tree",
+      "config": {
+        "max_water_depth": 0,
+        "ignore_vines": true,
+        "heightmap": "WORLD_SURFACE",
+        "minimum_size": {
+          "type": "minecraft:three_layers_feature_size",
+          "min_clipped_height": 10,
+          "limit": 30,
+          "upper_limit": 50,
+          "lower_size": 5,
+          "middle_size": 7,
+          "upper_size": 12
+        },
+        "trunk_provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 2,
+              "data": {
+                "Name": "minecraft:stripped_dark_oak_log"
+              }
+            },
+            {
+              "weight": 8,
+              "data": {
+                "Name": "minecraft:oak_log"
+              }
+            }
+          ]
+        },
+        "leaves_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:oak_leaves"
+          }
+        },
+        "trunk_placer": {
+          "type": "minecraft:forking_trunk_placer",
+          "base_height": 5,
+          "height_rand_a": 3,
+          "height_rand_b": 5
+        },
+        "foliage_placer": {
+          "type": "minecraft:spruce_foliage_placer",
+          "radius": {
+            "base": 8,
+            "spread": 5
+          },
+          "offset": 2,
+          "trunk_height": {
+            "base": 8,
+            "spread": 2
+          }
+        },
+        "decorators": [
+          {
+            "type": "minecraft:beehive",
+            "probability": 2
+          },
+          {
+            "type": "minecraft:alter_ground",
+            "provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:podzol"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
