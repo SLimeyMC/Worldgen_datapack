@@ -31,14 +31,14 @@
             "features": [
               {
                 "chance": 0.2,
-                "feature": "minecraft:mangrove/fancy/big"
+                "feature": "minecraft:slimey\mangrove\fancy\big"
               },
               {
                 "chance": 0.3,
-                "feature": "minecraft:mangrove/fancy/small"
+                "feature": "minecraft:slimey\mangrove\fancy\small"
               }
             ],
-            "default": "minecraft:mangrove/fancy/default"
+            "default": "minecraft:slimey\mangrove\fancy\default"
           }
         }
       }
