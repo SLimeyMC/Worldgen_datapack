@@ -7,15 +7,15 @@
           "config": {
             "features": [
               {
-                "feature": "minecraft:slimey\mangrove\water_blob\blob",
+                "feature": "minecraft:slimey/mangrove/water_blob/blob",
                 "chance": 0.5
               },
               {
-                "feature": "minecraft:slimey\mangrove\fancy\fancy",
+                "feature": "minecraft:slimey/mangrove/fancy/fancy",
                 "chance": 0.3
               }
             ],
-            "default": "minecraft:slimey\mangrove\default"
+            "default": "minecraft:slimey/mangrove/default"
           },
           "type": "minecraft:random_selector"
         },

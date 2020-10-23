@@ -50,7 +50,7 @@
     ],
     [],
     [
-      "minecraft:slimey\mangrove\mangrove",
+      "minecraft:slimey/mangrove/mangrove",
       "minecraft:flower_swamp",
       "minecraft:patch_grass_normal",
       "minecraft:patch_dead_bush",

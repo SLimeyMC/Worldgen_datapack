@@ -31,14 +31,14 @@
             "features": [
               {
                 "chance": 0.2,
-                "feature": "minecraft:slimey\mangrove\water_blob\big"
+                "feature": "minecraft:slimey/mangrove/water_blob/big"
               },
               {
                 "chance": 0.3,
-                "feature": "minecraft:slimey\mangrove\water_blob\small"
+                "feature": "minecraft:slimey/mangrove/water_blob/small"
               }
             ],
-            "default": "minecraft:slimey\mangrove\water_blob\default"
+            "default": "minecraft:slimey/mangrove/water_blob/default"
           }
         }
       }
